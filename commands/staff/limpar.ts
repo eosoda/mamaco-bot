@@ -37,7 +37,7 @@ export default {
 
     return {
       custom: true,
-      content: `${filtered.size} deletadas`,
+      content: `${filtered.size} mensagens deletadas`,
       ephemeral: true,
     }
   },

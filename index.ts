@@ -15,6 +15,7 @@ const client = new DiscordJS.Client({
     Intents.FLAGS.GUILD_PRESENCES,
   ],
 })
+
 client.on('ready', () => {
   console.log(`Logged in as ${client.user?.tag}!`)
 
@@ -34,9 +35,9 @@ client.on('ready', () => {
     testServers: ['890191286152355861', '245638302839865345'],
     dbOptions,
     mongoUri: process.env.MONGO_URI,
+    botOwners: ['136460373564981248'],
   })
-    .setBotOwner('136460373564981248')
-    .setDefaultPrefix('?')
+    .setDefaultPrefix('!')
     .setColor(0xff0000)
 })
 
