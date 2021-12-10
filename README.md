@@ -1,5 +1,5 @@
-<div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="mamaco-bot" />
+<!-- <div align="center" id="top">  -->
+<!--   <img src="./.github/app.gif" alt="mamaco-bot" /> -->
 
 &#xa0;
 
