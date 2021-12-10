@@ -9,7 +9,7 @@ export default (client: Client, instance: WOKCommands) => {
 
     // Get the channel named "welcome"
     const channel = guild.channels.cache.find(
-      (channel) => channel.name === 'welcome'
+      (channel) => channel.id === '896559857359028225'
     ) as TextChannel
 
     // Ensure this channel exists
@@ -17,10 +17,10 @@ export default (client: Client, instance: WOKCommands) => {
       return
     }
     // auto role
-    const role = member.guild.roles.cache.find(
-      (role) => role.name == 'Spectador'
-    )
-    member.roles.add(`${role}`)
+    // const role = member.guild.roles.cache.find(
+    //   (role) => role.id == '896559856746627084'
+    // )
+    // member.roles.add(`${role}`)
     // auto role end
 
     let welcomeGif = [
@@ -32,7 +32,6 @@ export default (client: Client, instance: WOKCommands) => {
     ]
     let gif = welcomeGif[Math.floor(Math.random() * welcomeGif.length)]
     const avt = member.user.displayAvatarURL()
-    // console.log(avt)
     if (!channel) return
     let embed = new MessageEmbed()
       .setColor('RANDOM')

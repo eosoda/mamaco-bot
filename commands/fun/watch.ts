@@ -1,6 +1,6 @@
 import { ICommand } from 'wokcommands'
 import { DiscordTogether } from 'discord-together'
-import DiscordJS, { Channel, VoiceChannel } from 'discord.js'
+import DiscordJS, { Channel } from 'discord.js'
 export default {
   category: 'fun',
   description: 'Watch Together',
