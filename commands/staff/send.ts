@@ -16,7 +16,6 @@ export default {
         : interaction.options.getChannel('channel')
     ) as TextChannel
 
-    // const an = client.channels.cache.get('896559857359028226') as TextChannel // canal anunciar
     if (!channel || channel.type !== 'GUILD_TEXT') {
       return 'Insira um canal de texto'
     }
